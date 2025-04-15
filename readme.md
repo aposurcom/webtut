@@ -1,4 +1,4 @@
-# Projekto pavadinimas
+# Pavyzdinis tinklalapis (HTML+CSS+JS+BOOTSTRAP5)
 
 ## Nuoroda į gyvą projektą (tinklalapį)
 [https://aposurcom.github.io/webtut/](https://aposurcom.github.io/webtut/)
