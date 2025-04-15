@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagrindinis puslapis</title>
+  <meta name="description" content="Pagrindinis puslapis - mano tinklapis su įvairiais elementais">
+  <meta name="keywords" content="HTML, CSS, tinklapis, pavyzdys, SEO">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style2.css" />
+</head>
+<body>
+  <!-- Navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Mano Tinklalapis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Pagrindinis</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Apie</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galerija</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Paslaugos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontaktai</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero sekcija -->
+  <div class="row">
+    <div class="col-md-3">
+      <div style="display:inline-block; position:relative">
+        <div class="gopher-container">
+            <img alt="Herojus goferis" id="anchor-proximity-hover" src="img/gopher.png" data-gopher-credits="https://github.com/ashleymcnamara/gophers">
+            <div id="eyes">
+                <img alt="Akis kairė" class="eye" src="img/eye.png" style="left:25px; top:50px; width: 50px; height: 50px;">
+                <img alt="Akis dešinė" class="eye" src="img/eye.png" style="right:25px; top:50px; width: 50px; height: 50px;">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 text-center">
+      <a href="index.html"><img alt="Kaspinas" id="anchor-proximity-hover" src="img/ribbon.png" style="max-width:100%;max-height:200px;"></a>
+    </div>
+  </div>
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Sveiki atvykę!</h1>
+      <p class="lead">Tai yra pavyzdinis tinklalapis su Bootstrap 5 ir JavaScript.</p>
+      <button class="btn btn-light mt-3" onclick="alert('Ačiū, kad lankotės!')">Spauskite mane</button>
+    </div>
+  </header>
+
+  <!-- Turinio sekcija -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Pagrindinis</h2>
+        <p>Šis tinklapis sukurtas kaip HTML, CSS pavyzdys, atitinkantis SEO reikalavimus.</p>
+        <section>
+          <h2>Lentelė</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>Pavadinimas</th>
+                      <th>Aprašymas</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Pirmas elementas</td>
+                      <td>Trumpas aprašymas</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Antras elementas</td>
+                      <td>Išsamesnis aprašymas</td>
+                  </tr>
+              </tbody>
+          </table>
+      </section>
+      <section>
+          <h2>Sąrašai</h2>
+          <h3>Neišrikiuotas sąrašas:</h3>
+          <ul>
+              <li>Pirmas punktas</li>
+              <li>Antras punktas</li>
+              <li>Trečias punktas</li>
+          </ul>
+          <h3>Išrikiuotas sąrašas:</h3>
+          <ol>
+              <li>Pirmas punktas</li>
+              <li>Antras punktas</li>
+              <li>Trečias punktas</li>
+          </ol>
+      </section>
+      <section>
+          <h2>Forma</h2>
+          <form action="#" method="post">
+              <label for="vardas">Vardas:</label>
+              <input type="text" id="vardas" name="vardas" required>
+              <br>
+              <label for="email">El. paštas:</label>
+              <input type="email" id="email" name="email" required>
+              <br>
+      <label for="remember">Prisiminti:</label>
+              <input type="checkbox" id="remember" name="remember" required>
+              <br>
+              <input type="submit" value="Siųsti">
+          </form>
+      </section>
+      </div>
+      <div class="col-md-6">
+        <img src="img/400x400.png" class="img-fluid rounded" style="min-width: 100%;height: auto;" alt="Pavyzdinis paveikslėlis 400x400">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Pavyzdinis Tinklalapis. Visos teisės saugomos.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript failai -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
